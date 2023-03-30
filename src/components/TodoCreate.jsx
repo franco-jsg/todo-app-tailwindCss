@@ -5,15 +5,12 @@ const TodoCreate = ({ createTodo }) => {
 
   const handleSubmitAddTodo = (e) => {
     e.preventDefault();
-    console.log(title);
 
     if (!title.trim()) {
-      console.log("vacio");
       return setTitle("");
     }
 
     createTodo(title);
-    console.log("hay texto");
 
     setTitle("");
   };
